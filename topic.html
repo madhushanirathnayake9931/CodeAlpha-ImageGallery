@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ancient Kingdoms | Serendib Gallery</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="topic.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo-area">
+
+            <div class="logo">
+                LK
+            </div>
+
+            <div>
+                <h2>Serendib Gallery</h2>
+
+                <p>
+                    ශ්‍රී ලංකාවේ සංස්කෘතිය හා උරුමය
+                </p>
+            </div>
+
+        </div>
+
+
+        <button id="themeBtn"
+                class="theme-btn">
+
+            ☀️ Light Mode
+
+        </button>
+
+    </header>
+
+
+    <!-- TOPIC CONTENT -->
+
+    <main class="topic-main">
+
+        <section class="topic-header">
+
+            <button class="back-btn"
+                    onclick="goBack()">
+
+                ← Back to Gallery
+
+            </button>
+
+
+            <span class="badge">
+                🇱🇰 Explore Sri Lanka
+            </span>
+
+
+            <h1 id="topicTitle">
+                Ancient Kingdoms
+            </h1>
+
+
+            <p id="topicDescription">
+
+                Discover the ancient cities,
+                kingdoms and historical places
+                of Sri Lanka.
+
+            </p>
+
+        </section>
+
+
+        <!-- IMAGES -->
+
+        <section class="topic-gallery"
+                 id="topicGallery">
+
+        </section>
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox"
+         id="topicLightbox">
+
+        <button class="close"
+                id="topicClose">
+
+            ×
+
+        </button>
+
+
+        <button class="prev"
+                id="topicPrev">
+
+            ❮
+
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img id="topicLightboxImage"
+                 src=""
+                 alt="">
+
+
+            <h2 id="topicLightboxTitle"></h2>
+
+
+            <p id="topicLightboxDescription"></p>
+
+        </div>
+
+
+        <button class="next"
+                id="topicNext">
+
+            ❯
+
+        </button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>🇱🇰 Serendib Gallery</h3>
+
+        <p>
+            Celebrating the culture, heritage and beauty of Sri Lanka.
+        </p>
+
+        <p class="copyright">
+            © 2026 Serendib Gallery
+        </p>
+
+    </footer>
+
+
+    <script src="./topic.js"></script>
+
+</body>
+
+</html>

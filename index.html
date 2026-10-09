@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serendib Gallery | Sri Lankan Heritage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-area">
+            <div class="logo"></div>
+
+            <div>
+                <h2>Land of Serendipity Album</h2>
+                <p>ශ්‍රී ලංකා දේශ සංස්කෘතිය හා උරුමය</p>
+            </div>
+        </div>
+
+        <button id="themeBtn" class="theme-btn">
+            ☀️ Light Mode
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <span class="badge">🇱🇰 Discover Sri Lanka</span>
+
+        <h1>Explore Sri Lankan<br>
+            <span>Culture & Heritage</span>
+        </h1>
+
+        <p>
+            Discover the beauty, history, traditions and natural wonders
+            of the pearl of the Indian Ocean through our visual gallery.
+        </p>
+
+        <div class="words">
+
+            <div>
+                <strong>ආයුබෝවන් </strong>
+                <strong>Ayubowan</strong>
+                <small>May you live long</small>
+            </div>
+
+            <div>
+                <strong>බොහොම ස්තුතියි </strong>
+                <strong>Bohoma Sthuthi</strong>
+                <small>Thank you very much</small>
+            </div>
+
+            <div>
+                <strong>ලංකා</strong>
+                <strong>Lanka</strong>
+                <small>Resplendent Island</small>
+            </div>
+
+            <div>
+                <strong>සිලෝන් තේ</strong>
+                <strong>Ceylon Tea</strong>
+                <small>World-renowned brew</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FILTER SECTION ================= -->
+
+    <section class="controls">
+
+        <div class="categories">
+
+            <button class="filter-btn active" data-filter="all"> All Photos</button>
+            <button class="filter-btn" data-filter="heritage"> 🏛️ Heritage & Culture</button>
+            <button class="filter-btn" onclick="window.location.href='topic.html?topic=kingdoms'">  👑 Ancient Kingdoms </button>
+            <button class="filter-btn" data-filter="ruins"> 🏺 Ancient Ruins</button>
+            <button class="filter-btn" onclick="window.location.href='topic.html?topic=elephants'"> 🐘 Elephants & Tuskers</button>
+            <button class="filter-btn" data-filter="places"> 🌴 Beautiful Places</button>
+            <button class="filter-btn" data-filter="food"> 🍵 Food & Tea</button>
+            <button class="filter-btn" data-filter="arts"> 🎭 Traditional Arts</button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-box">
+            <span>🔍</span>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search gallery..."
+            >
+        </div>
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+    <main class="gallery" id="gallery">
+        
+        <!-- IMAGE 1 -->
+
+        <div class="gallery-item"
+     data-category="kingdoms"
+     data-title="Anuradhapura">
+
+    <img src="images/anuradhapura.jpg"
+         alt="Anuradhapura">
+
+    <div class="image-info">
+        <span>ANCIENT KINGDOMS</span>
+        <h3>Anuradhapura</h3>
+        <p>Explore the ancient kingdoms of Sri Lanka</p>
+    </div>
+
+</div>
+        <!-- IMAGE 2 -->
+
+        <div class="gallery-item"
+             data-category="heritage"
+             data-title="Kandyan Dancing">
+
+            <img src="images/kandyan-dance.jpg"
+                 alt="Kandyan Dancing">
+
+            <div class="image-info">
+
+                <span>HERITAGE</span>
+
+                <h3>Kandyan Dancing</h3>
+
+                <p>A beautiful traditional Sri Lankan art</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 3 -->
+
+        <div class="gallery-item"
+             data-category="ruins"
+             data-title="Ancient Ruins">
+
+            <img src="images/ancient-ruins.jpg"
+                 alt="Ancient Ruins">
+
+            <div class="image-info">
+
+                <span>ANCIENT RUINS</span>
+
+                <h3>Ancient Ruins</h3>
+
+                <p>Stories preserved through centuries</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 4 -->
+
+        <div class="gallery-item"
+             data-category="elephants"
+             data-title="Sri Lankan Elephant">
+
+            <img src="images/elephant.jpg"
+                 alt="Sri Lankan Elephant">
+
+            <div class="image-info">
+
+                <span>WILDLIFE</span>
+
+                <h3>Sri Lankan Elephants</h3>
+
+                <p>The majestic giants of Sri Lanka</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 5 -->
+
+        <div class="gallery-item"
+             data-category="elephants"
+             data-title="Tusker">
+
+            <img src="images/tusker.jpg"
+                 alt="Sri Lankan Tusker">
+
+            <div class="image-info">
+
+                <span>ELEPHANTS & TUSKERS</span>
+
+                <h3>The Majestic Tusker</h3>
+
+                <p>A symbol of Sri Lankan heritage</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 6 -->
+
+        <div class="gallery-item"
+             data-category="places"
+             data-title="Ella Mountains">
+
+            <img src="images/ella.jpg"
+                 alt="Ella Mountains">
+
+            <div class="image-info">
+
+                <span>BEAUTIFUL PLACES</span>
+
+                <h3>Ella Mountains</h3>
+
+                <p>Misty mountains and breathtaking views</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 7 -->
+
+        <div class="gallery-item"
+             data-category="places"
+             data-title="Sri Lankan Beach">
+
+            <img src="images/beach.jpg"
+                 alt="Sri Lankan Beach">
+
+            <div class="image-info">
+
+                <span>BEAUTIFUL PLACES</span>
+
+                <h3>Tropical Paradise</h3>
+
+                <p>Golden beaches and turquoise waters</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 8 -->
+
+        <div class="gallery-item"
+             data-category="food"
+             data-title="Ceylon Tea">
+
+            <img src="images/tea.jpg"
+                 alt="Ceylon Tea">
+
+            <div class="image-info">
+
+                <span>FOOD & TEA</span>
+
+                <h3>Ceylon Tea</h3>
+
+                <p>World-famous tea from the highlands</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 9 -->
+
+        <div class="gallery-item"
+             data-category="food"
+             data-title="Sri Lankan Food">
+
+            <img src="images/food.jpg"
+                 alt="Sri Lankan Food">
+
+            <div class="image-info">
+
+                <span>FOOD & TEA</span>
+
+                <h3>Sri Lankan Cuisine</h3>
+
+                <p>Rich flavours and traditional recipes</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 10 -->
+
+        <div class="gallery-item"
+             data-category="arts"
+             data-title="Traditional Masks">
+
+            <img src="images/masks.jpg"
+                 alt="Sri Lankan Traditional Masks">
+
+            <div class="image-info">
+
+                <span>TRADITIONAL ARTS</span>
+
+                <h3>Traditional Masks</h3>
+
+                <p>Colourful art from Sri Lankan traditions</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 11 -->
+
+        <div class="gallery-item"
+             data-category="kingdoms"
+             data-title="Anuradhapura">
+
+            <img src="images/anuradhapura.jpg"
+                 alt="Anuradhapura">
+
+            <div class="image-info">
+
+                <span>ANCIENT KINGDOMS</span>
+
+                <h3>Anuradhapura</h3>
+
+                <p>One of Sri Lanka's ancient capitals</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IMAGE 12 -->
+
+        <div class="gallery-item"
+             data-category="kingdoms"
+             data-title="Polonnaruwa">
+
+            <img src="images/polonnaruwa.jpg"
+                 alt="Polonnaruwa">
+
+            <div class="image-info">
+
+                <span>ANCIENT KINGDOMS</span>
+
+                <h3>Polonnaruwa</h3>
+
+                <p>Ancient city rich in history</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="close" id="closeBtn">×</button>
+
+        <button class="prev" id="prevBtn">❮</button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="">
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxDescription"></p>
+
+        </div>
+
+        <button class="next" id="nextBtn">❯</button>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>🇱🇰 Serendib Gallery</h3>
+
+        <p>
+            Celebrating the culture, heritage and beauty of Sri Lanka.
+        </p>
+
+        <p class="copyright">
+            © 2026 Serendib Gallery
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
